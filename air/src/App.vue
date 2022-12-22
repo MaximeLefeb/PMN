@@ -20,6 +20,14 @@ export default {
   -moz-box-shadow   : 0px 0px 20px 0px rgba(168, 168, 168, 1);
   box-shadow        : 0px 0px 20px 0px rgba(168, 168, 168, 1);
 }
+.destination:hover div.row div.col-6:first-child small{
+  font-weight: bolder;
+  color      : orangered;
+}
+.destination:hover div.row div.col-6:first-child {
+  border-radius   :  0 10px 10px 0;
+  background-color: white;
+}
 .destination {
   height            : 300px;
   background-repeat : round;
@@ -71,6 +79,9 @@ export default {
 .btn-search {
   border          : none;
   background-color: orangered;
+}
+.btn-search:hover {
+  background-color: rgb(201, 57, 4);
 }
 .text-right {
   text-align: right;
