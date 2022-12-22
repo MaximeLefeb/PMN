@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <Navbar/>
 
-    <b-container>
+    <b-container fluid="md" class="mt-3">
       <b-row>
         <b-col sm="12" md="12" lg="6">
           <div id="find-your-holiday" class="p-3">
@@ -54,7 +54,7 @@
 
             <b-col cols="6" class="d-inline p-relative text-right">
               <span class="price">
-                150€
+                150 €
               </span>
             </b-col>
           </b-row>
@@ -64,7 +64,11 @@
       <b-row>
         <h1 id="top" class="text-center my-2"> Top destinations </h1>
 
-        <Destination v-for="dst in destinations" :dst="dst" :key="dst"></Destination>
+        <Destination v-for="dst in destinations" :dst="dst" :key="dst.id"></Destination>
+
+        <div class="text-center py-3">
+          <b-button id="more" class="btn-search px-5 py-2" variant="primary">See more...</b-button>
+        </div>
       </b-row>
     </b-container>
   </div>
@@ -94,58 +98,58 @@ export default {
     ],
     destinations: [
       {
-        price: '150',
+        price: '999',
         text: 'Sydney',
-        image: '',
+        id: 'sydney',
         hotel: 'Hotel Calypso',
         duration: '1 Week'
       },
       {
         price: '750',
         text: 'Rio',
-        image: '',
+        id: 'rio',
         hotel: 'Hotel Calypso',
         duration: '1 Week'
       },
       {
         price: '1299',
         text: 'Cusco',
-        image: '',
+        id: 'cusco',
         hotel: 'Hotel Calypso',
         duration: '3 Day'
       },
       {
         price: '150',
         text: 'New Dehli',
-        image: '',
+        id: 'newdehli',
         hotel: 'Hotel Calypso',
         duration: '1 Day'
       },
       {
         price: '879',
         text: 'Hong Kong',
-        image: '',
+        id: 'hongkong',
         hotel: 'Hotel Calypso',
         duration: '5 Days'
       },
       {
         price: '650',
         text: 'Katmandou',
-        image: '',
+        id: 'katmandou',
         hotel: 'Hotel Calypso',
         duration: '1 week'
       },
       {
         price: '1699',
         text: 'Tokyo',
-        image: '',
+        id: 'tokyo',
         hotel: 'Hotel Calypso',
         duration: '2 week'
       },
       {
         price: '299',
         text: 'Lisbonne',
-        image: '',
+        id: 'lisbonne',
         hotel: 'Hotel Calypso',
         duration: '3 week'
       }

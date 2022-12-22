@@ -13,105 +13,154 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Destination Components*/
 .destination {
-  height: 300px;
-  border: 1px solid red;
+  height            : 300px;
+  background-repeat : round;
+  box-shadow        : inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
+  -moz-box-shadow   : inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
+  -webkit-box-shadow: inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
+}
+.destination > h3 {
+  font-size: 2em;
+  color    : orangered;
+}
+.destination > * {
+  font-family: roboto;
+  color      : rgb(50, 50, 50);
+}
+.destination > div.row > div.col-6:first-child > small {
+  font-size: 1em;
 }
 
+/* Navbar */
 #navbar {
+  box-shadow        : 0px 4px 12px -3px rgba(171, 171, 171, 1);
+  -moz-box-shadow   : 0px 4px 12px -3px rgba(171, 171, 171, 1);
   -webkit-box-shadow: 0px 4px 12px -3px rgba(171, 171, 171, 1);
-  -moz-box-shadow: 0px 4px 12px -3px rgba(171, 171, 171, 1);
-  box-shadow: 0px 4px 12px -3px rgba(171, 171, 171, 1);
 }
 #navbar-header {
-  color: rgb(0, 102, 133);
-  font-size: 2rem;
   font-weight: 600;
+  font-size  : 2rem;
+  color      : rgb(0, 102, 133);
 }
 #nav-collapse {
   justify-content: right;
 }
-
-.no-rounded {
-  border-radius: 0 !important;
-}
-
 .navbar-items > a{
   text-decoration: none;
-  font-size: 1.5rem;
-  color: rgb(0, 102, 133);
+  font-size      : 1.5rem;
+  color          : rgb(0, 102, 133);
 }
 .navbar-items:hover > a {
   transition: color 100ms;
-  color: rgb(255, 55, 0);
+  color     : rgb(255, 55, 0);
 }
 
+/* Shared class */
+.no-rounded {
+  border-radius: 0 !important;
+}
 .btn-search {
+  border          : none;
   background-color: orangered;
-  border: none;
 }
-
 .text-right {
   text-align: right;
 }
+span.price {
+  font-weight     : 600;
+  padding         : 10px;
+  right           : -17px;
+  font-size       : 1.1rem;
+  position        : relative;
+  font-family     : 'roboto';
+  background-color: rgb(255, 204, 0);
+}
+.card-bottom {
+  bottom  : -150px;
+  position: relative;
+}
 
+/* Deal of the day */
 #amsterdam {
   height: 322px;
 }
 #amsterdam > div {
-  color: rgb(50, 50, 50);
+  bottom  : -115px;
   position: relative;
-  bottom: -115px;
+  color   : rgb(50, 50, 50);
 }
 #amsterdam > h3 {
   color: rgb(50, 50, 50);
 }
-
-h1#top {
-  color: rgb(73, 73, 73);
-}
-
-span.price {
-  background-color: rgb(255, 221, 0);
-  padding: 10px;
-  border-radius: 10px 0 0 10px;
-  position: relative;
-  right: -17px;
-}
-
-div#find-your-holiday {
-  background-color: rgb(0, 102, 133);
-  color: white;
-}
-
-.bloc {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-button#find {
-  font-weight: 600;
-}
-
 #amsterdam {
-  background-image: url('./assets/amsterdam.jpg');
-  background-clip: content-box;
-  background-repeat: round;
+  background-repeat : round;
+  background-clip   : content-box;
+  background-image  : url('./assets/amsterdam.jpg');
   -webkit-box-shadow: inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
-  -moz-box-shadow: inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
-  box-shadow: inset 0px 0px 300px 5px rgba(250, 250, 250, 1)
+  -moz-box-shadow   : inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
+  box-shadow        : inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
 }
 #amsterdam > h3 {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
+h1#top {
+  color: rgb(73, 73, 73);
+}
 
+/* Find you holiday bloc */
+div#find-your-holiday {
+  color           : white;
+  background-color: rgb(0, 102, 133);
+}
+.bloc {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+button#find {
+  font-weight: 600;
+}
+
+/* Other */
+button#more {
+  width: 33%;
+}
+
+/* Responsive */
 @media only screen and (max-width : 991.5px) {
   #navbar {
-    justify-content: center;
+    justify-content: space-between;
   }
 
-  button#find {
+  button#find, button#more {
     width: 100%;
   }
+}
+
+/* Images */
+#sydney {
+  background-image: url('./assets/sydney.jpg');
+}
+#rio {
+  background-image: url('./assets/rio.jpeg');
+}
+#cusco {
+  background-image: url('./assets/cusco.jpeg');
+}
+#newdehli {
+  background-image: url('./assets/newdehli.jpg');
+}
+#hongkong {
+  background-image: url('./assets/hongkong.jpg');
+}
+#katmandou {
+  background-image: url('./assets/katmandou.jpg');
+}
+#tokyo {
+  background-image: url('./assets/tokyo.jpg');
+}
+#lisbonne {
+  background-image: url('./assets/lisbonne.jpg');
 }
 </style>
