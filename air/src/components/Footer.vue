@@ -1,6 +1,6 @@
 <template>
   <div class="footer p-0 mt-4">
-    <b-row class="text-center" style="background-color: #037171;">
+    <b-row class="text-center" style="background-color: rgb(0, 102, 133);;">
       <b-col lg="2"></b-col>
 
       <b-col sm="6" lg="2">

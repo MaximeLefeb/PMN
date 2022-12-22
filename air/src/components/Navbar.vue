@@ -15,10 +15,10 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav right>
-            <b-nav-item class="navbar-items" href="#">Home</b-nav-item>
+            <b-nav-item class="navbar-items" href="#/">Home</b-nav-item>
             <b-nav-item class="navbar-items" href="#">Destination</b-nav-item>
             <b-nav-item class="navbar-items" href="#">Deals</b-nav-item>
-            <b-nav-item class="navbar-items" href="/contact">Contact</b-nav-item>
+            <b-nav-item class="navbar-items" href="#/contact">Contact</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
