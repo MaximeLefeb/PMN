@@ -14,12 +14,18 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Destination Components*/
+.destination:hover {
+  cursor            : pointer;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(168, 168, 168, 1);
+  -moz-box-shadow   : 0px 0px 20px 0px rgba(168, 168, 168, 1);
+  box-shadow        : 0px 0px 20px 0px rgba(168, 168, 168, 1);
+}
 .destination {
   height            : 300px;
   background-repeat : round;
-  box-shadow        : inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
-  -moz-box-shadow   : inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
-  -webkit-box-shadow: inset 0px 0px 300px 5px rgba(250, 250, 250, 1);
+  -webkit-box-shadow: inset 0px 0px 169px 19px rgba(207, 207, 207, 1);
+  -moz-box-shadow   : inset 0px 0px 169px 19px rgba(207, 207, 207, 1);
+  box-shadow        : inset 0px 0px 169px 19px rgba(207, 207, 207, 1);
 }
 .destination > h3 {
   font-size: 2em;
@@ -30,7 +36,8 @@ export default {
   color      : rgb(50, 50, 50);
 }
 .destination > div.row > div.col-6:first-child > small {
-  font-size: 1em;
+  font-weight: 600;
+  font-size  : 1em;
 }
 
 /* Navbar */
@@ -136,6 +143,18 @@ button#more {
   button#find, button#more {
     width: 100%;
   }
+}
+
+/* Footer */
+.footer {
+  background-color  : #b3c6c6;
+  -webkit-box-shadow: 0px -7px 19px 0px rgba(189, 189, 189, 1);
+  -moz-box-shadow   : 0px -7px 19px 0px rgba(189, 189, 189, 1);
+  box-shadow        : 0px -7px 19px 0px rgba(189, 189, 189, 1);
+}
+.footer-header {
+  font-weight: bolder;
+  color      : rgb(50, 50, 50);
 }
 
 /* Images */

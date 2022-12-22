@@ -2,11 +2,11 @@
   <b-row>
     <b-col cols="12" class="p-0">
       <b-navbar toggleable="lg" type="dark" id="navbar" class="px-3">
-        <b-navbar-toggle target="nav-collapse" right>
+        <b-navbar-toggle target="nav-collapse" right class="mx-2">
           <img src="../assets/menu.png" width="24">
         </b-navbar-toggle>
 
-        <b-navbar-brand href="#" id="navbar-header" class="text-sm-center">
+        <b-navbar-brand href="#" id="navbar-header" class="text-sm-center mx-2">
           <img src="../assets/plane.png" alt="Plane">
           Travel Agency
         </b-navbar-brand>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
     <Navbar/>
 
     <b-container fluid="md" class="mt-3">
@@ -71,6 +71,8 @@
         </div>
       </b-row>
     </b-container>
+
+    <Footer/>
   </div>
 </template>
 
