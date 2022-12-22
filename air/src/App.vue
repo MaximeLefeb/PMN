@@ -25,7 +25,7 @@ export default {
   color      : orangered;
 }
 .destination:hover div.row div.col-6:first-child {
-  border-radius   :  0 10px 10px 0;
+  border-radius   :  10px;
   background-color: white;
 }
 .destination {
